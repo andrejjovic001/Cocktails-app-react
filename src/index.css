@@ -1,13 +1,197 @@
-body {
+/* GENERAL */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(255, 255, 255, 0.684);
+  /* padding-bottom: 150px; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+main {
+  height: 100vh;
+}
+
+/* NAVBAR */
+nav {
+  background-color: rgba(232, 221, 221, 0.237);
+  box-shadow: 0 0 8px rgb(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+}
+
+.nav-title {
+  font-size: 25px;
+}
+
+nav input {
+  font-size: 18px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+nav input::placeholder {
+  font-size: 15px;
+}
+
+nav p {
+  font-size: 20px;
+}
+
+/* COCKTAIL LIST */
+h1 {
+  font-size: 45px;
+  color: orange;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 100px;
+  column-gap: 45px;
+}
+
+ul img {
+  width: 100%;
+}
+
+li {
+  text-align: left;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.cocktail-inf {
+  padding: 23px;
+}
+
+li h2 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+li h4 {
+  font-size: 21px;
+  color: orangered;
+  margin-bottom: 7px;
+}
+
+li h5 {
+  color: rgba(0, 0, 0, 0.33);
+  margin-bottom: 12px;
+}
+
+li .btn-wrapp {
+  text-align: right;
+}
+
+li button {
+  padding: 7px;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+li button:hover {
+  background-color: rgb(189, 133, 27);
+}
+
+.error {
+  text-align: center;
+  color: rgb(135, 5, 5);
+}
+
+.loader {
+  text-align: center;
+  color: black;
+}
+
+.loader h1 {
+  color: black;
+}
+
+/* COCKTAIL DETAILS */
+
+.cocktail-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  margin: auto;
+}
+
+.details-img {
+  width: 350px;
+}
+
+.details-img img {
+  width: 100%;
+}
+
+.cocktail-info h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.cocktail-info h2 span {
+  color: orange;
+}
+
+.back-btn {
+  font-size: 17px;
+  padding: 7px;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.2s all;
+}
+
+.back-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  margin-top: 80px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(237, 234, 234, 0.978); */
+  box-shadow: 0 2px 2px rgb(0, 0, 0, 0.3);
 }
